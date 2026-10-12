@@ -1,0 +1,7 @@
+{
+  "name":"zerops-xray-singbox-panel","version":"1.0.0","private":true,
+  "description":"Zerops panel for managing Xray and sing-box VLESS/Trojan WS/XHTTP inbounds",
+  "scripts":{"start":"node server.js","check":"node --check server.js"},
+  "dependencies":{"express":"^4.21.2","express-session":"^1.18.1","qrcode":"^1.5.4"},
+  "engines":{"node":">=20"}
+}

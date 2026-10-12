@@ -1,0 +1,23 @@
+zerops:
+  - setup: panel
+    build:
+      base: nodejs@20
+      buildCommands:
+        - npm install --omit=dev
+      deployFiles: ./
+    run:
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
+        - port: 3001
+          httpSupport: true
+        - port: 3002
+          httpSupport: true
+        - port: 3003
+          httpSupport: true
+        - port: 3004
+          httpSupport: true
+      prepareCommands:
+        - sudo apt-get update && sudo apt-get install -y curl unzip ca-certificates
+      start: npm start
