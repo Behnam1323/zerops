@@ -1,0 +1,3 @@
+node_modules/
+data/panel.json
+configs/*.generated.json
